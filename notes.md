@@ -26,6 +26,18 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 
 ## ConsoleColor.java
 
+-It defines an enum calles ConsoleColor
+-enum(use to define a fixed set of values allwed nothing else)
+-It represents a different text colors fro console output
+-ITs purpose is to use color text in the terminal
+-How it works is each color has an ANSI escape code(a special string RED-> prints red text etc)
+-RESET is used to return text to normal color
+-private final String code (Stores the ANSI code for each color)
+-Constructor (Assigns the ANSI code to each enum value)
+-Method getCode() -> return ANSI code as string
+-Method toSTring() -> Returs the ANSI code and allows using colors directly in print statement
+-this file use for styling output not coltrol logic control the output look
+
 ## ColorPrinter.java / ColorPrinterTest.java
 
 ## TruffulaOptions.java / TruffulaOptionsTest.java
