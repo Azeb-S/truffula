@@ -17,6 +17,12 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 -Create a TruffulaOptions object using args
 -Create a truffulaPrinter using Sysytem.out
 -Call printTree() to display the directory
+1 ['-nc', '-h', '/path/to/directory']
+→ Don't use color, do show hidden files
+2 ['-h', '-nc', '/path/to/directory']
+→ Don't use color, do show hidden files (order of flags is ignored).
+3 ['/path/to/directory']
+→ Use color, don't show hidden files.
 
 ## ConsoleColor.java
 
