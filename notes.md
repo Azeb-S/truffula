@@ -52,6 +52,13 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 -print(String message) -> prints without newline, Reset color after printing
 -Overloaded version with boolean reset -> Decide if to reset color or keep it
 -constructor Deafult color is white can alos set cutom color
+-TruffulaPrinterTest.java Notes
+-Junit test class build test directory structure to run the test
+-helper methods
+-isWindows()-> Detects if OS is windows
+-createHiddenFile()->Creates hiddenfiles works on windows and unix
+-testPrintTree_ExactOutput_WithCustomPrintStream()
+-Creates folder structure use TruffulaOptions (config)and TruffulaPrinter (main logic)
 
 ## TruffulaOptions.java / TruffulaOptionsTest.java
 
