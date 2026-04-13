@@ -93,3 +93,7 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 -TruffulaPrinter(options, outStream, colorSequence)=> full constructor
 
 ## AlphabeticalFileSorter.java
+
+-sort array of file alphabetically
+-Method sort(File[] files) => take an array of files return sorted array
+-case insensetive for sorting
