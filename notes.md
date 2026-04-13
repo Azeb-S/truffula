@@ -82,4 +82,14 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 
 ## TruffulaPrinter.java / TruffulaPrinterTest.java
 
+-it prints the printing the directory tree format
+-handel (indentation, sorting, hidden file filtering, color output)
+-options=> stores settings from TruffulaOptions
+-colorSequence=>list of colors used for each level
+-out=> a ColorPrinter used to printout
+-TruffulaPrinter(options)=> used System.out and default colors
+-TruffulaPrinter(options, colorSequence)=> uses custom colors
+-TruffulaPrinter(options, outStream) =>uses custom output stream
+-TruffulaPrinter(options, outStream, colorSequence)=> full constructor
+
 ## AlphabeticalFileSorter.java
