@@ -62,6 +62,24 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 
 ## TruffulaOptions.java / TruffulaOptionsTest.java
 
+-this class stores the Settings/option for printing the durectory tree
+-it decides => What forlder to print => Whether to show hidden files => Where to use color
+-Root => starting directory
+-showHidden => true(include hidden files) false(skip hidden files)
+-useColor => true(colored output) false(Print everything in white)
+-Getter Methods
+-getRoot()=> returns the root folder
+-isShowHidden() => return whether hidden files should be shown
+-isUseColor() => return where color should be used
+-toString() => Gives a readable text version of the object
+-TruffulaOptions(String[] args) => this constructor that muct parse command-line arguments
+-TruffulaOptions(File root, boolean showHidden, boolean useColor)=> Let's code directly create options without parsing args
+-TruffulaOptionsTest.java Notes
+-junit test, test TruffulaOptions constructor that uses String[] args
+-it checks getRoot()=> should match the directory path
+-isShowHidden() => should be true becouse of -h
+-isUseColor()=>should be false becouse of -nc
+
 ## TruffulaPrinter.java / TruffulaPrinterTest.java
 
 ## AlphabeticalFileSorter.java
