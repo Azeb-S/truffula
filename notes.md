@@ -40,6 +40,19 @@ PLEASE MAKE FREQUENT COMMITS AS YOU FILL OUT THIS FILE.
 
 ## ColorPrinter.java / ColorPrinterTest.java
 
+-This class use to print colored text to the console it uses ConsoleColor for colors and PrintStream like system.out
+-it handesl output formatting
+-It controles how text is printed (color + output)
+-currentColor : stores the current color being used
+-printStream: where output is sent (System.out)
+-Methods
+-SetCurrentColor(ConsoleColor color) -> chnag ethe color for duture prints
+-getCurrentColor() -> return current color
+-printli(String message)->Prints message + newline, Reset color after printing
+-print(String message) -> prints without newline, Reset color after printing
+-Overloaded version with boolean reset -> Decide if to reset color or keep it
+-constructor Deafult color is white can alos set cutom color
+
 ## TruffulaOptions.java / TruffulaOptionsTest.java
 
 ## TruffulaPrinter.java / TruffulaPrinterTest.java
