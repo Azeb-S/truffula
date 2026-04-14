@@ -111,15 +111,15 @@ public class TruffulaOptions {
     if (args.length == 0 || args == null) {
       throw new IllegalArgumentException();
     }
-    boolean showHiddenT = false;
-    boolean useColorT = true;
+    boolean showHiddenD = false;
+    boolean useColorD = true;
     String path = args[args.length - 1];
 
     for (int i = 0; i < args.length - 1; i++) {
       if (args[i].equals("-h")) {
-        showHiddenT = true;
+        showHiddenD = true;
       } else if (args[i].equals("-nc")) {
-        useColorT = false;
+        useColorD = false;
       } else {
         throw new IllegalArgumentException();
       }
@@ -130,8 +130,8 @@ public class TruffulaOptions {
     }
 
     root = file;
-    showHidden = showHiddenT;
-    useColor = useColorT;
+    showHidden = showHiddenD;
+    useColor = useColorD;
   }
 
   /**
