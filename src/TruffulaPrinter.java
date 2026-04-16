@@ -122,8 +122,8 @@ public class TruffulaPrinter {
     // DO NOT USE SYSTEM.OUT.PRINTLN
     // USE out.println instead (will use your ColorPrinter)
     printTree(root, 1);
-    // out.println("printTree was called!");
-    // out.println("My options are: " + options);
+    out.println("printTree was called!");
+    out.println("My options are: " + options);
 
   }
 
@@ -137,6 +137,10 @@ public class TruffulaPrinter {
     String indent = "   ".repeat(depth);
 
     for (File child : children) {
+      // wave 5 check the Hidden files
+      if (!options.isShowHidden() && child.getName().startsWith(".")) {
+        continue;
+      }
       if (child.isDirectory()) {
         out.println(indent + child.getName() + "/");
         printTree(child, depth + 1);
