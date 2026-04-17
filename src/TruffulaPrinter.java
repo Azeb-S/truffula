@@ -141,6 +141,15 @@ public class TruffulaPrinter {
       if (!options.isShowHidden() && child.getName().startsWith(".")) {
         continue;
       }
+      // Wave 6 color
+      ConsoleColor color = colorSequence.get(depth % colorSequence.size());
+
+      if (options.isUseColor()) {
+        out.setCurrentColor(color);
+      } else {
+        out.setCurrentColor(ConsoleColor.WHITE);
+      }
+
       if (child.isDirectory()) {
         out.println(indent + child.getName() + "/");
         printTree(child, depth + 1);
