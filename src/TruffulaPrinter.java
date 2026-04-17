@@ -132,6 +132,7 @@ public class TruffulaPrinter {
     if (children == null) {
       return;
     }
+    // wave 7 Alphabetization
     children = AlphabeticalFileSorter.sort(children);
 
     String indent = "   ".repeat(depth);
